@@ -37,12 +37,35 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+## How to use
+
+1. **Run the program** and select the 3rd option to automatically create the required folders
+
+2. **For PDF conversion:**
+   - Drag and drop PDF files into the `pdf_to_convert` folder
+
+3. **For image conversion:**
+   - Drag and drop images into the `images/images_to_convert` folder
+
 #### Building for source
 
 Compile.
 ```sh
 pyinstaller --onefile --name PDFConverter.exe --target-arch win64 creator.py
 ```
+
+## Structure
+
+📦 PDFConverter
+├── 📂 images/
+│   ├── 📂 extracted_images      # 🖼️ Images from PDFs
+│   └── 📂 images_to_convert     # ⏳ Queue for conversion
+├── 📂 pdf_to_convert/
+│   ├── 📄 a.pdf                # Sample document
+│   └── 📄 sample-local-pdf.pdf
+├── 🐍 creator.py               # Main script
+├── 📖 README.md
+└── 📝 requirements.txt
 
 ## License
 
