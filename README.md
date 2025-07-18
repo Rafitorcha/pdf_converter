@@ -55,10 +55,10 @@ pyinstaller --onefile --name PDFConverter.exe --target-arch win64 creator.py
 ```
 
 ## Structure
-
+```
 📦 PDFConverter
 ├── 📂 images/
-│   ├── 📂 extracted_images      # 🖼️ Images from PDFs
+│   ├── 📂 extracted_images      # 🖼️ Images from PDF
 │   └── 📂 images_to_convert     # ⏳ Queue for conversion
 ├── 📂 pdf_to_convert/
 │   ├── 📄 a.pdf                # Sample document
@@ -66,6 +66,7 @@ pyinstaller --onefile --name PDFConverter.exe --target-arch win64 creator.py
 ├── 🐍 creator.py               # Main script
 ├── 📖 README.md
 └── 📝 requirements.txt
+```
 
 ## License
 
